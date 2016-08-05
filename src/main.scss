@@ -1,3 +1,9 @@
+$text: rgba(0, 0, 0, 1);
+$primary: rgba(26, 56, 86, 1);
+$secondary: rgba(4, 110, 143, 1);
+$offWhite: rgba(238, 240, 242, 1);
+$white: rgba(255, 255, 255, 1);
+
 @import
 "stylesheets/reset",
 "components/card/card",
@@ -12,10 +18,11 @@
 	max-width: 64em;
 	margin: 0 auto;
 	padding: 0 1.25em;
+	background: $offWhite;
 }
 
 .rhythm > * + * {
-	margin-top: 1.5em;
+	margin-top: 1em;
 }
 
 .layout-frame-wrapper {
@@ -39,25 +46,48 @@
 
 .grid {
 	width: 100%;
-}
+	overflow: hidden;
+	.grid-sizer,
+	.grid-item {
+		float: left;		
+	}
+	.grid-item { 
+		img {
+			width: 100%;
+		}
+	}
 
-.grid-sizer,
-.grid-item {
-	width: 33.33%;
+	&.grid--header{
+		background: white;
+		.grid-sizer,
+		.grid-item {
+		
+			width: 25%;
+			@media (max-width: 1000px) {
+				width: 50%;
+			}
+		}
+	}
+	&.grid--body{
+		background: white;
+		.grid-sizer,
+		.grid-item {
+			width: 33.3%;
 
-	@media (max-width: 1000px) {
-		width: 50%;
+			@media (max-width: 1000px) {
+				width: 50%;
+			}
+		}
 	}
 }
-.grid-item { 
-	img {
-		width: 100%;
-	}
-}
+
+
+
 
 .layout-sidebyside {
 	overflow: hidden;
 	width: 100%;
+	min-width: 100px;
 	min-height: 18.75em;
 
 	@media (min-width: 1000px) {

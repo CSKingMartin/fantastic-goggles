@@ -1,12 +1,14 @@
 .card {
-	border: solid black 2px;
+	//border: solid black 2px;
 	position: relative;
-	background: grey;
+	//background: $secondary;
 	height: 100%;
 	min-height: 18.75em;
 	overflow: hidden;
 	.card__content {
-		margin-bottom: 3em;
+		//margin-bottom: 3em;
+		padding: 10px;
+		color: $text;
 	}
 	p {
 		padding: 10px;

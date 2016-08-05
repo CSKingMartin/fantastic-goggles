@@ -12,11 +12,11 @@
 	.reveal-block__content-hide {
 
 		a {
-			color: black;
+			color: $text;
 			text-decoration: none;
 		}
 
-		font-size: 3em;
+		font-size: 1.5em;
 		font-weight: bold;
 		transition: opacity ease-in .5s;
 		opacity: 0;
