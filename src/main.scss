@@ -1,0 +1,74 @@
+@import
+"stylesheets/reset",
+"components/card/card",
+"components/button/button",
+"components/header",
+"components/tabs/tabs",
+"components/reveal-block",
+"components/image-gallery/image-gallery";
+
+.content-main{
+	position: relative;
+	max-width: 64em;
+	margin: 0 auto;
+	padding: 0 1.25em;
+}
+
+.rhythm > * + * {
+	margin-top: 1.5em;
+}
+
+.layout-frame-wrapper {
+	overflow: hidden;
+	width: 100%;
+	min-height: 18.75em;
+
+	@media (min-width: 1000px) {
+		& > * { 
+			float: left;
+			margin-top: 0em;
+			&:nth-child(1) {width: 23%;}
+			&:nth-child(2) {width: 46%;}
+			&:nth-child(3) {width: 23%;}
+		}
+		& > * + * {
+			margin-left: 4%;
+		}
+	}
+}
+
+.grid {
+	width: 100%;
+}
+
+.grid-sizer,
+.grid-item {
+	width: 33.33%;
+
+	@media (max-width: 1000px) {
+		width: 50%;
+	}
+}
+.grid-item { 
+	img {
+		width: 100%;
+	}
+}
+
+.layout-sidebyside {
+	overflow: hidden;
+	width: 100%;
+	min-height: 18.75em;
+
+	@media (min-width: 1000px) {
+		& > * { 
+			float: left;
+			margin-top: 0em;
+			width: 48%;
+		}
+		& > * + * {
+			margin-left: 4%;
+		}
+	}
+}
+

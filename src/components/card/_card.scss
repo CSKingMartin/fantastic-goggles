@@ -1,0 +1,29 @@
+.card {
+	border: solid black 2px;
+	position: relative;
+	background: grey;
+	height: 100%;
+	min-height: 18.75em;
+	overflow: hidden;
+	.card__content {
+		margin-bottom: 3em;
+	}
+	p {
+		padding: 10px;
+	}
+	.card__title {
+		width: 100%;
+		position: absolute;
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: .5em;
+		bottom: 0;
+		background: white;
+	}
+}
+
+
+
+
+
+
