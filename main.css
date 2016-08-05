@@ -150,7 +150,7 @@ h5 {
   opacity: .2; }
 
 .reveal-block .reveal-block__content-hide {
-  font-size: 3em;
+  font-size: 1.5em;
   font-weight: bold;
   transition: opacity ease-in .5s;
   opacity: 0;
