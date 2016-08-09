@@ -76,14 +76,17 @@ h5 {
 
 .card {
   position: relative;
+  background: #86baa1;
   height: 100%;
-  min-height: 18.75em;
   overflow: hidden; }
   .card .card__content {
     padding: 10px;
     color: black; }
   .card p {
     padding: 10px; }
+  .card img {
+    width: 100%;
+    position: relative; }
   .card .card__title {
     width: 100%;
     position: absolute;
@@ -270,10 +273,9 @@ ul.navbar {
   .content.content--main {
     margin-top: 200px; }
   .content.content--narrow {
-    max-width: 64em;
+    max-width: 1240px;
     margin: 0 auto;
-    padding: 0 1.25em;
-    background: #eef0f2; }
+    padding: 0 1.25em; }
 
 .is-under-nav {
   padding-top: 50px; }
@@ -308,15 +310,36 @@ ul.navbar {
     .layout-frame-wrapper > * + * {
       margin-left: 4%; } }
 
+.layout-3wide {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px; }
+  @media (min-width: 1000px) {
+    .layout-3wide > * {
+      float: left;
+      margin-top: 0em; }
+      .layout-3wide > *:nth-child(1) {
+        width: 31%; }
+      .layout-3wide > *:nth-child(2) {
+        width: 31%; }
+      .layout-3wide > *:nth-child(3) {
+        width: 31%; }
+    .layout-3wide > * + * {
+      margin-left: 3.5%; } }
+
 .layout-sidebyside {
   overflow: hidden;
   width: 100%;
   min-width: 100px;
-  min-height: 18.75em; }
+  min-height: 18.75em;
+  padding: 20px; }
   @media (min-width: 1000px) {
     .layout-sidebyside > * {
       float: left;
-      margin-top: 0em;
-      width: 48%; }
+      margin-top: 0em; }
+      .layout-sidebyside > *:nth-child(1) {
+        width: 65%; }
+      .layout-sidebyside > *:nth-child(2) {
+        width: 32%; }
     .layout-sidebyside > * + * {
-      margin-left: 4%; } }
+      margin-left: 3%; } }
