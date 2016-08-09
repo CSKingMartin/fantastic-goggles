@@ -1,6 +1,7 @@
 //main.js
 var tabs = require('./components/tabs/tabs.js');
 
-var imageGallery = require('./components/image-gallery/image-gallery.js');
-
+var masonry = require('masonry');
+var nav = require('./components/navbar/navbar.js');
+var gridjs = require('./components/grid/grid');
 

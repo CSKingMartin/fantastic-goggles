@@ -1,12 +1,11 @@
 .header {
-	//margin-top: 1em;
+	
 	width: 100%;
 	text-align: center;
 	background: $primary;
 	color: $white;
-	overflow: hidden;
-	padding-top: 75px;
-	padding-bottom: 75px;
+	padding-top: 55px;
+
 
 	.header__logo {
 		font-size: 3.5em;
@@ -16,9 +15,20 @@
 		font-size: 1.5em;
 	}
 
+	&.header--main {
+		position: fixed;
+		height: 200px;
+		top: 0;
+		z-index: -100;
+	}
+
 	&.small {
 		padding-top: 50px;
 		padding-bottom: 50px;
+	}
+
+	&:target {
+
 	}
 
 }

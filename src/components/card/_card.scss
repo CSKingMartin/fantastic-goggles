@@ -1,9 +1,9 @@
 .card {
 	//border: solid black 2px;
 	position: relative;
-	//background: $secondary;
+	background: $trimary;
 	height: 100%;
-	min-height: 18.75em;
+	//min-height: 18.75em;
 	overflow: hidden;
 	.card__content {
 		//margin-bottom: 3em;
@@ -12,6 +12,11 @@
 	}
 	p {
 		padding: 10px;
+	}
+
+	img {
+		width: 100%;
+		position: relative;
 	}
 	.card__title {
 		width: 100%;

@@ -1,0 +1,37 @@
+//grid.scss
+.grid {
+	width: 100%;
+	overflow: hidden;
+
+
+	.grid-item {
+		img {
+			width: 100%;
+		}
+	}
+
+	&.grid--header{
+		background: white;
+		.grid-sizer,
+		.grid-item {
+		
+			width: 25%;
+			@media (max-width: 1000px) {
+				width: 50%;
+			}
+		}
+	}
+	&.grid--body{
+		background: white;
+		.grid-sizer,
+		.grid-item {
+			width: 25%;
+
+			border: 1px solid white;
+
+			@media (max-width: 1000px) {
+				width: 50%;
+			}
+		}
+	}
+}

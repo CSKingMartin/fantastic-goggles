@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="main.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="./imagesloaded.pkgd.js"></script>
 	<script type="text/javascript" src="./masonry.pkgd.js"></script>
 	<script src="./bundle.js"></script>
@@ -15,459 +15,29 @@
 
 <body>
 
-	<div class="header rhythm">
+	<div class="header header--main rhythm">
 		<div class="header__logo">
 			CURT WELLS
 		</div>
 		<div class="header__sub">
 			PRINTMAKER
 		</div>
-
 	</div>
+
+
+	<div class="content content--main">
+		
+		<ul class= "navbar">
+			<li><a href="#">Home</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+			<li class="last"><a href="#contact">Contact</a></li>
+		</ul>
+
 	
+	<div class="rhythm is-under-nav">
+		
 
-		<div class="rhythm">
-
-			<div class="grid grid--header">
-				<div class="grid-sizer"></div>
-
-				<div class="grid-item">
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/valentines.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Love Frogs
-						</div>
-					
-					</div>
-				</div>
-
-				<div class="grid-item">
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/russians.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Russians
-						</div>
-					
-					</div>
-				</div>
-
-
-				<div class="grid-item">
-					<div class="reveal-block">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/blueFrog.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Line Frog
-						</div>
-					
-					</div>
-				</div>
-
-
-				<div class="grid-item">
-					<div class="reveal-block">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/selfPortrait2.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Self Portrait, 3 Color Print
-						</div>
-					
-					</div>
-				</div>
-
-
-				<div class="grid-item">
-					<div class="reveal-block">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/rhinoJockey.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Blue Rhino no. 6
-						</div>
-					
-					</div>
-				</div>
-
-				<div class="grid-item">
-					<div class="reveal-block">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/cows.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Cow Line
-						</div>
-					
-					</div>
-				</div>
-
-			</div>
-
-			
-			<!-- <div class="grid">
-				<div class="grid-sizer"></div>
-
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/baloonists.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							The Balloonists
-						</div>
-					
-					</div>
-
-				</div>
-				
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/bantamRooster.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Bantam Rooster
-						</div>	
-					
-					</div>
-
-				</div>
-
-				<div class="grid-item">
-
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/chickenSeries1.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Rooster, 1 of 3
-						</div>
-					
-					</div>
-					
-				</div>
-
-				<div class="grid-item">
-
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/frogPrince.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							King Frog
-						</div>
-					
-					</div>
-					
-				</div>
-
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/selfPortrait.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Self Portrait, 3 Colors
-						</div>
-					
-					</div>
-
-				</div>
-
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/russians.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Russians
-						</div>
-					
-					</div>
-					
-				</div>
-
-				<div class="grid-item">
-
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/casablanca.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Ricks American
-						</div>
-					
-					</div>
-					
-					
-				</div>
-
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/chickenSeries3.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Rooster, 3 of 3
-						</div>
-					
-					</div>
-					
-				</div>
-
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/cowboy.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Cowboy
-						</div>
-					
-					</div>
-					
-				</div>
-
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/rhinoJockey.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Blue Rhino, no. 6
-						</div>
-					
-					</div>
-					
-				</div>
-
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/blueFrog.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Frog Line
-						</div>
-					
-					</div>
-					
-				</div>
-
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/chickenSeries2.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Rooster, 2 of 3
-						</div>
-					
-					</div>
-					
-				</div>
-
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/cows.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Cows
-						</div>
-					
-					</div>
-
-				</div>
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/flamingo.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Flamingo
-						</div>
-					
-					</div>
-
-				</div>
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/judgeMerritt.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Judge Merritt
-						</div>
-					
-					</div>
-
-				</div>
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/knight.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Knight
-						</div>
-					
-					</div>
-
-				</div>
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/lineFrog.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Line Frog
-						</div>
-					
-					</div>
-
-				</div>
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/polishSisters.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Polish Sisters
-						</div>
-					
-					</div>
-
-				</div>
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/selfPortrait2.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Self Portrait
-						</div>
-					
-					</div>
-
-				</div>
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/treeFrog.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Tree Frog
-						</div>
-					
-					</div>
-
-				</div>
-				<div class="grid-item">
-					
-					<div class="reveal-block ">
-							
-						<div class="reveal-block__content-dim">
-							<img src="images/valentines.jpg">
-						</div>
-
-						<div class="reveal-block__content-hide">
-							Be Mine
-						</div>
-					
-					</div>
-
-				</div>
-	
-			</div> -->
-		</div>
-	
-	<div class="rhythm">
-		<div class="header rhythm small">
-			<div class="header__logo">
-				ABOUT
-			</div>
-			<div class="header__sub">
-				CURT WELLS
-			</div>
-
-		</div>
-
-		<div class="content-main">
+		<div class="content content--narrow">
 			<div class="rhythm">
 
 				<div class="layout-sidebyside">
@@ -476,16 +46,19 @@
 							Curt Wells is an artist based in Enumclaw, WA. He has had considerable experience in various areas of the arts, graphic design, and printmaking. His focus consists of Linoleum Block Printing -- the art of carving from blocks to then create a stamp. The blocks are then rolled with ink, and printed onto paper multiple times. Some prints have multiple colors which require either multiple blocks for different inks, or a reduction print, where the block is continuously carved after successive prints.
 							<br>
 						</div>
-						<div class="grid grid--body">
-							<div class="grid-sizer"></div>
-							<div class="grid-item">
+						<div class="layout-3wide">
+							<div class="card">
 								<img src="images/chickenSeries1.jpg">
+								<div class="shadow"></div>
 							</div>
-							<div class="grid-item">
+							<div class="card">
 								<img src="images/chickenSeries2.jpg">
+								<div class="shadow"></div>
 							</div>
-							<div class="grid-item">
+							
+							<div class="card">
 								<img src="images/chickenSeries3.jpg">
+								<div class="shadow"></div>
 							</div>
 						</div>
 						<div class="card__content">
@@ -501,34 +74,27 @@
 
 					<div class="card">
 						
-							<img src="images/selfPortrait.jpg">
-						
+						<img src="images/selfPortrait.jpg">
+						<div class="shadow"></div>
 					</div>
-
-				
-
-					
-
 				</div>
 					
 			</div>
 				
 		</div>
 
-		<div class="header rhythm small">
+		<div class="header rhythm small" id="gallery">
 			<div class="header__logo">
 				GALLERY
-			</div>
-			<div class="header__sub">
-				HOVER AND CLICK AN IMAGE TO VIEW MORE
 			</div>
 
 		</div>
 
-		<div class="content-main rhythm">
+		<div class="content content--narrow rhythm">
 			
 			<div class="grid grid--body">
 				<div class="grid-sizer"></div>
+				<div class="gutter-sizer"></div>
 
 				<div class="grid-item">
 					
@@ -536,6 +102,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/baloonists.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -552,6 +119,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/bantamRooster.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -568,6 +136,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/chickenSeries1.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -584,6 +153,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/frogPrince.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -600,6 +170,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/selfPortrait.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -616,6 +187,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/russians.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -632,6 +204,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/casablanca.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -649,6 +222,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/chickenSeries3.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -665,6 +239,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/cowboy.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -681,6 +256,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/rhinoJockey.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -697,6 +273,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/blueFrog.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -713,6 +290,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/chickenSeries2.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -729,6 +307,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/cows.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -744,6 +323,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/flamingo.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -759,6 +339,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/judgeMerritt.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -774,6 +355,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/knight.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -789,6 +371,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/lineFrog.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -804,6 +387,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/polishSisters.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -819,6 +403,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/selfPortrait2.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -834,6 +419,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/treeFrog.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -849,6 +435,7 @@
 							
 						<div class="reveal-block__content-dim">
 							<img src="images/valentines.jpg">
+							<div class="shadow"></div>
 						</div>
 
 						<div class="reveal-block__content-hide">
@@ -860,44 +447,44 @@
 				</div>
 	
 			</div>
+
+		</div>
+
+		<div class="header rhythm small" id="contact">
+			<div class="header__logo">
+				CONTACT
+			</div>
+			<div class="header__sub">
+				CURT WELLS
+			</div>
+
+		</div>
+
+		<div class="content-main rhythm">
+
 		</div>
 
 </div>
 		
-	
-
-
-		
-
 <script>
-	var headerGrid = document.querySelector('.grid.grid--header');
-	var msnry = new Masonry( headerGrid, {
-	  // options
-	  itemSelector: '.grid-item',
-	  columnWidth: '.grid-sizer',
-	  percentPosition: true
-	});
-
-	
 
 	var bodyGrid = document.querySelector('.grid.grid--body');
-	var msnry2 = new Masonry( bodyGrid, {
+	var msnry = new Masonry( bodyGrid, {
 		itemSelector: '.grid-item',
 		columnWidth: '.grid-sizer',
 	 	percentPosition: true
 	});
 
-	imagesLoaded( headerGrid ).on( 'progress', function() {
-		msnry.layout();
-	});
+
 	
 	imagesLoaded( bodyGrid ).on( 'progress', function() {
-		msnry2.layout();
+		msnry.layout();
 	});
 </script>
 
 			
 </div>
+	</div>
 
 </body>
 
