@@ -109,8 +109,7 @@ h5 {
   background: #1a3856;
   color: white;
   overflow: hidden;
-  padding-top: 75px;
-  padding-bottom: 75px; }
+  padding-top: 55px; }
   .header .header__logo {
     font-size: 3.5em; }
   .header .header__sub {
@@ -200,6 +199,32 @@ h5 {
     min-width: 225px;
     margin-left: -30px;
     margin-top: -30px; }
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+  ul.navbar li {
+    float: left;
+    height: 100%;
+    width: 25%;
+    border-right: 2px solid #046e8f; }
+    ul.navbar li.last {
+      border: none; }
+    ul.navbar li a {
+      color: white;
+      height: 100%;
+      display: inline-block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 20px;
+      font-size: 1.2em; }
 
 .content-main {
   position: relative;
