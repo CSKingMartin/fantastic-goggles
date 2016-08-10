@@ -75,6 +75,7 @@ h5 {
   font-size: 1em; }
 
 .card {
+  border: solid black 2px;
   position: relative;
   background: #86baa1;
   height: 100%;
@@ -87,14 +88,24 @@ h5 {
   .card img {
     width: 100%;
     position: relative; }
-  .card .card__title {
-    width: 100%;
-    position: absolute;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: .5em;
-    bottom: 0;
-    background: white; }
+  .card.card--has-title {
+    background: #fadf63; }
+    .card.card--has-title .card__content {
+      margin-bottom: 3em; }
+    .card.card--has-title .card__title {
+      width: 100%;
+      position: absolute;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: .5em;
+      bottom: 0;
+      background: #204787;
+      color: white; }
+
+.card--shadow-card {
+  -webkit-box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.75); }
 
 .button {
   background: grey;
@@ -260,12 +271,31 @@ ul.navbar {
     background: white; }
     .grid.grid--body .grid-sizer,
     .grid.grid--body .grid-item {
-      width: 25%;
-      border: 1px solid white; }
+      width: 25%; }
       @media (max-width: 1000px) {
         .grid.grid--body .grid-sizer,
         .grid.grid--body .grid-item {
           width: 50%; } }
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .modal .modal__content {
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 1024px;
+    padding: 10px;
+    background: white; }
+
+.modal:target {
+  display: initial; }
 
 .content {
   background: #eef0f2;
@@ -314,18 +344,31 @@ ul.navbar {
   overflow: hidden;
   width: 100%;
   padding: 20px; }
-  @media (min-width: 1000px) {
-    .layout-3wide > * {
-      float: left;
-      margin-top: 0em; }
-      .layout-3wide > *:nth-child(1) {
-        width: 31%; }
-      .layout-3wide > *:nth-child(2) {
-        width: 31%; }
-      .layout-3wide > *:nth-child(3) {
-        width: 31%; }
-    .layout-3wide > * + * {
-      margin-left: 3.5%; } }
+  .layout-3wide > * {
+    float: left;
+    margin-top: 0em; }
+    .layout-3wide > *:nth-child(1) {
+      width: 31%; }
+    .layout-3wide > *:nth-child(2) {
+      width: 31%; }
+    .layout-3wide > *:nth-child(3) {
+      width: 31%; }
+  .layout-3wide > * + * {
+    margin-left: 3.5%; }
+
+.layout-2wide {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px; }
+  .layout-2wide > * {
+    float: left;
+    margin-top: 0em; }
+    .layout-2wide > *:nth-child(1) {
+      width: 49%; }
+    .layout-2wide > *:nth-child(2) {
+      width: 49%; }
+  .layout-2wide > * + * {
+    margin-left: 2%; }
 
 .layout-sidebyside {
   overflow: hidden;

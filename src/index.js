@@ -1,7 +1,5 @@
 //main.js
-var tabs = require('./components/tabs/tabs.js');
-
-var masonry = require('masonry');
+var jq = require('./vendor/jquery-1.11.0.min.js')
 var nav = require('./components/navbar/navbar.js');
-var gridjs = require('./components/grid/grid');
-
+var gridjs = require('./components/grid/grid.js');
+var tabs = require('./components/tabs/tabs.js');

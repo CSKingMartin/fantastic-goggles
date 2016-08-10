@@ -14,7 +14,8 @@ $white: rgba(255, 255, 255, 1);
 "components/reveal-block",
 "components/image-gallery/image-gallery",
 "components/navbar/navbar",
-"components/grid/grid";
+"components/grid/grid",
+"components/modal/modal";
 
 .content {
 	background: $offWhite;
@@ -76,17 +77,34 @@ $white: rgba(255, 255, 255, 1);
 	width: 100%;
 	padding: 20px;
 
-	@media (min-width: 1000px) {
-		& > * { 
-			float: left;
-			margin-top: 0em;
-			&:nth-child(1) {width: 31%;}
-			&:nth-child(2) {width: 31%;}
-			&:nth-child(3) {width: 31%;}
-		}
-		& > * + * {
-			margin-left: 3.5%;
-		}
+	
+	& > * { 
+		float: left;
+		margin-top: 0em;
+		&:nth-child(1) {width: 31%;}
+		&:nth-child(2) {width: 31%;}
+		&:nth-child(3) {width: 31%;}
+	}
+	& > * + * {
+		margin-left: 3.5%;
+	}
+	
+}
+
+.layout-2wide {
+	overflow: hidden;
+	width: 100%;
+	padding: 20px;
+
+	
+	& > * { 
+		float: left;
+		margin-top: 0em;
+		&:nth-child(1) {width: 49%;}
+		&:nth-child(2) {width: 49%;}
+	}
+	& > * + * {
+		margin-left: 2%;
 	}
 }
 
