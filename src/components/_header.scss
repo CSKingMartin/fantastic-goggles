@@ -5,8 +5,7 @@
 	background: $primary;
 	color: $white;
 	padding-top: 55px;
-
-
+	
 	.header__logo {
 		font-size: 3.5em;
 	}
@@ -20,15 +19,22 @@
 		height: 200px;
 		top: 0;
 		z-index: -100;
+		background: $test;
 	}
 
-	&.small {
+	&.header--small {
 		padding-top: 50px;
 		padding-bottom: 50px;
+		margin-bottom: 10px;
+
+		.header__logo{
+			font-size: 3em;
+		}
 	}
+}
 
-	&:target {
-
+.wrapper {
+	&.wrapper--header{
+		padding-top: 50px;
 	}
-
 }

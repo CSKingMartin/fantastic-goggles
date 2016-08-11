@@ -3,6 +3,7 @@
 	position: relative;
 	background: $trimary;
 	height: 100%;
+	font-size: 1.1em;
 	
 	overflow: hidden;
 	.card__content {
@@ -20,7 +21,7 @@
 	}
 
 	&.card--has-title {
-		background: $secondary;
+		background: $primary;
 		.card__content {
 			margin-bottom: 3em;
 			
@@ -38,6 +39,11 @@
 		}
 	}
 
+}
+#will-hide {
+	@media(max-width: 1000px){ 
+		display: none; 
+	}
 }
 
 .card--shadow-card {

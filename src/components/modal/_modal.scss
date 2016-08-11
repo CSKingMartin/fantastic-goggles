@@ -1,7 +1,8 @@
 //_modal.scss
 
 .modal {
-	display: none;
+	z-index: -3;
+	opacity: 0; //screen readers will still read this, won't read with display: none
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -9,18 +10,29 @@
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 
+	transition: opacity ease-in .3s;
+
+
 	.modal__content {
-		position: relative;
+		position: inline;
 		margin: auto;
 		margin-top: 100px;
 		margin-bottom: 100px;
-		max-width: 1024px;
+		max-width: 60%;
+		max-height: 80%;
 		padding: 10px;
 		background: white;
+	}
+
+	@media(max-width: 1000px){
+		.modal__content{
+			width: 75%;
+		}
 	}
 }
 
 .modal:target {
-	display: initial;
+	z-index: 10;
+	opacity: 1;
 }
 

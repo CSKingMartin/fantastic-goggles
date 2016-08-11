@@ -16,6 +16,7 @@
     "gulp-sass": "^2.3.2",
     "hbsfy": "^2.7.0",
     "imagesloaded": "^4.1.0",
+    "jquery": "^3.1.0",
     "masonry": "braznaavtrav/masonry",
     "matches-selector": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",

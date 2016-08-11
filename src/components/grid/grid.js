@@ -1,7 +1,7 @@
 //grid.js
 
 var Masonry = require('masonry');
-var imgLoaded = require('imagesloaded')
+var imagesLoaded = require('imagesloaded')
 
 var bodyGrid = document.querySelector('.grid.grid--body');
 var msnry2 = new Masonry( bodyGrid, {

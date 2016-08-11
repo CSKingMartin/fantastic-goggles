@@ -1,4 +1,6 @@
 //tabs.js
+var jQuery = require('jquery');
+
 jQuery(function($) {
 	$(".tabs").each(function() {
 		$(".tabs__item").each(function() {

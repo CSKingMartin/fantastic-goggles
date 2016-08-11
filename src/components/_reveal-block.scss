@@ -6,7 +6,12 @@
 		}
 		.reveal-block__content-dim {
 			transition: opacity ease-in .5s;
-			opacity: .2;
+			opacity: .7;
+		}
+
+		a {
+			height: 100%;
+			width: 100%;
 		}
 	}
 	.reveal-block__content-hide {

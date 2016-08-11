@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Curt Wells Printmaking</title>
 	<link rel="stylesheet" href="main.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
@@ -10,7 +11,7 @@
 
 <body>
 
-	<div class="header header--main rhythm">
+	<div class="header header--main rhythm" >
 		<div class="header__logo">
 			CURT WELLS
 		</div>
@@ -29,51 +30,38 @@
 		</ul>
 
 		<div class="rhythm is-under-nav">
-			
+			<!-- about content starts here -->
 			<div class="content content--narrow">
 
 				<div class="rhythm">
 
-					<div class="layout-sidebyside">
-
+					<div class="layout layout-2to1">
+	
 						<div class="card card--shadow-card">
 
 							<div class="card__content">
-								Curt Wells is an artist based in Enumclaw, WA. He has had considerable experience in various areas of the arts, graphic design, and printmaking. His focus consists of Linoleum Block Printing -- the art of carving from blocks to then create a stamp. The blocks are then rolled with ink, and printed onto paper multiple times. Some prints have multiple colors which require either multiple blocks for different inks, or a reduction print, where the block is continuously carved after successive prints.
+								Curt Wells is an artist based in Enumclaw, WA. He has had considerable experience in various areas of the arts, graphic design, printmaking, and printing. His focus consists of Linoleum Block Printing -- carving away from blocks to create a stamp. 
 								<br>
 							</div>
 
-							<div class="layout-3wide">
-								<div class="card">
+							<div class="layout layout-3wide">
 									<img src="images/chickenSeries1.jpg">
-									<!-- <div class="shadow"></div> -->
-								</div>
-								<div class="card">
 									<img src="images/chickenSeries2.jpg">
-									<!-- <div class="shadow"></div> -->
-								</div>
-								
-								<div class="card">
 									<img src="images/chickenSeries3.jpg">
-									<!-- <div class="shadow"></div> -->
-								</div>
 							</div>
 
 							<div class="card__content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+								Curt's process begins with a sketch of the subject. The sketch is then transferred onto a block via tracing paper. The transferred sketch is a mirror image of the original -- the print will be oriented the same as the drawing. Some prints have multiple colors which require either multiple blocks for different inks, or a reduction print. A reduction print requires the block to be continually continuously carved after successive prints. The blocks are then rolled with ink, and printed onto paper. The process often requires multiple prints because of inconsistencies in the ink.
+								<br>
 							</div>
-
 						</div>
+						
 
-						<div class="card card--shadow-card">
+
+						<div class="card card--shadow-card" id="will-hide">
 							
 							<img src="images/selfPortrait.jpg">
-							<!-- <div class="shadow"></div> -->
 
 						</div>
 
@@ -82,14 +70,18 @@
 				</div>
 					
 			</div>
+			<!-- gallery header -->
+			<div class="wrapper wrapper--header" id="gallery">
+				
+				<div class="header rhythm header--small">
+					<div class="header__logo">
+						GALLERY
+					</div>
 
-			<div class="header rhythm small" id="gallery">
-				<div class="header__logo">
-					GALLERY
 				</div>
-
+				
 			</div>
-
+			<!-- masonry grid -->
 			<div class="content content--narrow rhythm">
 				
 				<div class="grid grid--body">
@@ -99,16 +91,12 @@
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
-								
-							<div class="reveal-block__content-dim">
-								<img src="images/baloonists.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
-
-							<div class="reveal-block__content-hide">
-								<a href="#balloonists">The Balloonists</a>
-							</div>
-						
+							<a href="#balloonists">
+								<div class="reveal-block__content-dim">
+									<img src="images/baloonists.jpg">
+								</div>
+							</a>
+							
 						</div>
 
 					</div>
@@ -116,16 +104,13 @@
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#bantamRooster">
+								<div class="reveal-block__content-dim">
+									<img src="images/bantamRooster.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/bantamRooster.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Bantam Rooster</a>
-							</div>	
-						
 						</div>
 
 					</div>
@@ -133,16 +118,14 @@
 					<div class="grid-item">
 
 						<div class="reveal-block ">
+							<a href="#chickenSeries1">
+								<div class="reveal-block__content-dim">
+									<img src="images/chickenSeries1.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/chickenSeries1.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Rooster, 1 of 3</a>
-							</div>
-						
+							
 						</div>
 						
 					</div>
@@ -150,16 +133,14 @@
 					<div class="grid-item">
 
 						<div class="reveal-block ">
+							<a href="#frogPrince">
+								<div class="reveal-block__content-dim">
+									<img src="images/frogPrince.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/frogPrince.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">King Frog</a>
-							</div>
-						
+							
 						</div>
 						
 					</div>
@@ -168,15 +149,12 @@
 						
 						<div class="reveal-block ">
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/selfPortrait.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							<a href="#selfPortrait">
+								<div class="reveal-block__content-dim">
+									<img src="images/selfPortrait.jpg">
+								</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Self Portrait, 3 Colors</a>
-							</div>
-						
 						</div>
 
 					</div>
@@ -184,16 +162,14 @@
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#russians">
+								<div class="reveal-block__content-dim">
+									<img src="images/russians.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/russians.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Russians</a>
-							</div>
-						
+							
 						</div>
 						
 					</div>
@@ -201,16 +177,14 @@
 					<div class="grid-item">
 
 						<div class="reveal-block ">
+							<a href="#casablanca">
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/casablanca.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+								<div class="reveal-block__content-dim">
+									<img src="images/casablanca.jpg">
+								</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Ricks American</a>
-							</div>
-						
+							
 						</div>
 						
 						
@@ -219,16 +193,14 @@
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#chickenSeries3">
+								<div class="reveal-block__content-dim">
+									<img src="images/chickenSeries3.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/chickenSeries3.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Rooster, 3 of 3</a>
-							</div>
-						
+							
 						</div>
 						
 					</div>
@@ -236,16 +208,14 @@
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#cowboy">
+								<div class="reveal-block__content-dim">
+									<img src="images/cowboy.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/cowboy.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Cowboy</a>
-							</div>
-						
+							
 						</div>
 						
 					</div>
@@ -253,16 +223,14 @@
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#rhinoJockey">
+								<div class="reveal-block__content-dim">
+									<img src="images/rhinoJockey.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/rhinoJockey.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Blue Rhino, no. 6</a>
-							</div>
-						
+							
 						</div>
 						
 					</div>
@@ -270,16 +238,14 @@
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#blueFrog">
+								<div class="reveal-block__content-dim">
+									<img src="images/blueFrog.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/blueFrog.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Frog Line</a>
-							</div>
-						
+							
 						</div>
 						
 					</div>
@@ -287,16 +253,14 @@
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#chickenSeries2">
+								<div class="reveal-block__content-dim">
+									<img src="images/chickenSeries2.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/chickenSeries2.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Rooster, 2 of 3</a>
-							</div>
-						
+							
 						</div>
 						
 					</div>
@@ -304,144 +268,126 @@
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#cows">
+								<div class="reveal-block__content-dim">
+									<img src="images/cows.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/cows.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Cows</a>
-							</div>
-						
+							
 						</div>
 
 					</div>
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#flamingo">
+								<div class="reveal-block__content-dim">
+									<img src="images/flamingo.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/flamingo.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Flamingo</a>
-							</div>
-						
+							
 						</div>
 
 					</div>
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#judgeMerritt">
+								<div class="reveal-block__content-dim">
+									<img src="images/judgeMerritt.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/judgeMerritt.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Judge Merritt</a>
-							</div>
-						
+							
 						</div>
 
 					</div>
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#knight">
+								<div class="reveal-block__content-dim">
+									<img src="images/knight.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/knight.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Knight</a>
-							</div>
-						
+							
 						</div>
 
 					</div>
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#lineFrog">
+								<div class="reveal-block__content-dim">
+									<img src="images/lineFrog.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/lineFrog.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Line Frog</a>
-							</div>
-						
+							
 						</div>
 
 					</div>
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#polishSisters">
+								<div class="reveal-block__content-dim">
+									<img src="images/polishSisters.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/polishSisters.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Polish Sisters</a>
-							</div>
-						
+							
 						</div>
 
 					</div>
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#selfPortrait2">
+								<div class="reveal-block__content-dim">
+									<img src="images/selfPortrait2.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/selfPortrait2.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Self Portrait</a>
-							</div>
-						
+							
 						</div>
 
 					</div>
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#treeFrog">
+								<div class="reveal-block__content-dim">
+									<img src="images/treeFrog.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/treeFrog.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Tree Frog</a>
-							</div>
-						
+							
 						</div>
 
 					</div>
 					<div class="grid-item">
 						
 						<div class="reveal-block ">
+							<a href="#valentines">
+								<div class="reveal-block__content-dim">
+									<img src="images/valentines.jpg">
+								</div>
 								
-							<div class="reveal-block__content-dim">
-								<img src="images/valentines.jpg">
-								<!-- <div class="shadow"></div> -->
-							</div>
+							</a>
 
-							<div class="reveal-block__content-hide">
-								<a href="#">Be Mine</a>
-							</div>
-						
+							
 						</div>
 
 					</div>
@@ -450,358 +396,380 @@
 
 			</div>
 
-			<div class="header rhythm small" id="contact">
-				<div class="header__logo">
-					CONTACT
-				</div>
-				<div class="header__sub">
-					CURT WELLS
-				</div>
+			<!-- contact content starts here -->
+			<div class="wrapper wrapper--header" id="contact">
+				<div class="header rhythm header--small">
+					<div class="header__logo">
+						CONTACT
+					</div>
 
+				</div>
+				
 			</div>
 
-			<div class="content-main rhythm">
 
+			<div class="content content--narrow rhythm">
+				<div class="layout layout-1to2">
+					<div class="card card--has-title">
+						<div class="card__title">
+							Curt Wells -- Printmaker
+						</div>
+						<div class="card__content">
+							Contact the artist by filling out the following form.
+						</div>
+
+					</div>
+
+					<div class="card">
+						mock contact form
+					</div>
+				</div>
+				
 			</div>
 
 		</div>
 
 	</div>
-		<div class="modal" id="balloonists">
-			<div class="modal__content layout-sidebyside">
-				
-				<img src="./images/baloonists.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						The Balloonists
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
-					</div>
-				</div>
-			</div>
-		</div>
+			<!-- modal starts here -->
 
-		<div class="modal" id="bantamRooster">
-			<div class="modal__content layout-sidebyside">
+	<div id="modal-wrapper">
+			<div class="modal" id="balloonists">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/baloonists.jpg">
 				
-				<img src="./images/bantamRooster.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Bantam Rooster
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							The Balloonists
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="chickenSeries1">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="bantamRooster">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/bantamRooster.jpg">
 				
-				<img src="./images/chickenSeries1.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Rooster, 1 of 3
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Bantam Rooster
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="frogPrince">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="chickenSeries1">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/chickenSeries1.jpg">
 				
-				<img src="./images/frogPrince.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						King Frog
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Rooster, 1 of 3
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="selfPortrait2">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="frogPrince">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/frogPrince.jpg">
 				
-				<img src="./images/selfPortrait.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Self Portrait, 3 Colors
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							King Frog
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="russians">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="selfPortrait">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/selfPortrait.jpg">
 				
-				<img src="./images/russians.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Russians
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Self Portrait, 3 Colors
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="casablanca">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="russians">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/russians.jpg">
 				
-				<img src="./images/casablanca.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Ricks American
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Russians
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="chickenSeries3">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="casablanca">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/casablanca.jpg">
 				
-				<img src="./images/chickenSeries3.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Rooster, 3 of 3
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Ricks American
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="cowboy">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="chickenSeries3">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/chickenSeries3.jpg">
 				
-				<img src="./images/cowboy.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						The Balloonists
-					</div>
-					<div class="card__content">
-						Cowboy
+					<div class="card card--has-title">
+						<div class="card__title">
+							Rooster, 3 of 3
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="rhinoJockey">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="cowboy">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/cowboy.jpg">
 				
-				<img src="./images/rhinoJockey.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Blue Rhino, no. 6
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							The Balloonists
+						</div>
+						<div class="card__content">
+							Cowboy
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="blueFrog">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="rhinoJockey">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/rhinoJockey.jpg">
 				
-				<img src="./images/blueFrog.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Frog Line
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Blue Rhino, no. 6
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="chickenSeries2">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="blueFrog">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/blueFrog.jpg">
 				
-				<img src="./images/chickenSeries2.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Rooster, 2 of 3
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Frog Line
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="cows">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="chickenSeries2">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/chickenSeries2.jpg">
 				
-				<img src="./images/cows.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Cow Line
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Rooster, 2 of 3
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="flamingo">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="cows">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/cows.jpg">
 				
-				<img src="./images/flamingo.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Flamingo
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Cow Line
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="judgeMerritt">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="flamingo">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/flamingo.jpg">
 				
-				<img src="./images/judgeMerritt.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Judge Merritt
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Flamingo
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="knight">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="judgeMerritt">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/judgeMerritt.jpg">
 				
-				<img src="./images/knight.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Knight
-					</div>
-					<div class="card__content">
-						Medium: Lino Block Print
+					<div class="card card--has-title">
+						<div class="card__title">
+							Judge Merritt
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="lineFrog">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="knight">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/knight.jpg">
 				
-				<img src="./images/lineFrog.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Line Frog
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Knight
+						</div>
+						<div class="card__content">
+							Medium: Lino Block Print
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="polishSisters">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="lineFrog">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/lineFrog.jpg">
 				
-				<img src="./images/polishSisters.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Polish Sisters
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Line Frog
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="selfPortrait1">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="polishSisters">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/polishSisters.jpg">
 				
-				<img src="./images/selfPortrait2.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Self Portrait
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Polish Sisters
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="treeFrog">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="selfPortrait2">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/selfPortrait2.jpg">
 				
-				<img src="./images/treeFrog.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Tree Frog
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Self Portrait
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal" id="valentines">
-			<div class="modal__content layout-sidebyside">
+			<div class="modal" id="treeFrog">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/treeFrog.jpg">
 				
-				<img src="./images/valentines.jpg">
-			
-				<div class="card card--has-title">
-					<div class="card__title">
-						Be Mine
-					</div>
-					<div class="card__content">
-						Medium: Linoleum Block Print 
+					<div class="card card--has-title">
+						<div class="card__title">
+							Tree Frog
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+
+			<div class="modal" id="valentines">
+				<div class="modal__content layout layout-sidebyside">
+					
+					<img src="./images/valentines.jpg">
+				
+					<div class="card card--has-title">
+						<div class="card__title">
+							Be Mine
+						</div>
+						<div class="card__content">
+							Medium: Linoleum Block Print 
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
 
 	<script src="./bundle.js"></script>
 
