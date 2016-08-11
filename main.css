@@ -82,6 +82,7 @@ h5 {
   position: relative;
   background: #86baa1;
   height: 100%;
+  font-size: 1.1em;
   overflow: hidden; }
   .card .card__content {
     padding: 10px;
@@ -104,6 +105,10 @@ h5 {
       bottom: 0;
       background: #204787;
       color: white; }
+
+@media (max-width: 1000px) {
+  #will-hide {
+    display: none; } }
 
 .card--shadow-card {
   -webkit-box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.75);
@@ -136,9 +141,12 @@ h5 {
     height: 200px;
     top: 0;
     z-index: -100; }
-  .header.small {
+  .header.header--small {
     padding-top: 50px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    margin-bottom: 10px; }
+    .header.header--small .header__logo {
+      font-size: 3em; }
 
 .wrapper.wrapper--header {
   padding-top: 50px; }
