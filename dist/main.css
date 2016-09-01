@@ -223,6 +223,15 @@ ul.navbar {
   ul.navbar.is-fixed {
     position: fixed;
     top: 0; }
+    ul.navbar.is-fixed p {
+      opacity: 1; }
+  ul.navbar p {
+    height: 100%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .5s ease-in; }
   ul.navbar li {
     float: left;
     height: 100%;
