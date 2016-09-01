@@ -286,18 +286,25 @@ ul.navbar {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity ease-in .3s; }
+  .modal .modal__close-button {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer; }
   .modal .modal__content {
-    position: inline;
-    margin: auto;
+    display: block;
+    position: absolute;
+    margin-left: 25%;
     margin-top: 100px;
-    margin-bottom: 100px;
-    max-width: 60%;
-    max-height: 80%;
-    padding: 10px;
-    background: white; }
-  @media (max-width: 1000px) {
-    .modal .modal__content {
-      width: 75%; } }
+    overflow: hidden;
+    min-width: 50%; }
+  .modal img {
+    display: block;
+    margin: auto; }
 
 .modal:target {
   z-index: 10;
